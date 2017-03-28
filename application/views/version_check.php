@@ -1,0 +1,1 @@
+<?php echo "CI v".CI_VERSION;  ?>

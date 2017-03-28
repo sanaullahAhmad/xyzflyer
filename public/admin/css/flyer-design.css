@@ -1,0 +1,112 @@
+/* paddings */
+
+.pt-10 { padding-top: 10px; } .pb-10 { padding-bottom: 10px; }
+.pt-20 { padding-top: 20px; } .pb-20 { padding-bottom: 20px; }
+.pt-30 { padding-top: 30px; } .pb-30 { padding-bottom: 30px; }
+.pt-40 { padding-top: 40px; } .pb-40 { padding-bottom: 40px; }
+
+/* margins */
+.mt-0  { margin-top: 0px;  } .mb-0  { margin-bottom: 0px;  }
+.mt-10 { margin-top: 10px; } .mb-10 { margin-bottom: 10px; }
+.mt-20 { margin-top: 20px; } .mb-20 { margin-bottom: 20px; }
+.mt-30 { margin-top: 30px; } .mb-30 { margin-bottom: 30px; }
+.mt-40 { margin-top: 40px; } .mb-40 { margin-bottom: 40px; }
+
+/* fonts sizes */
+
+.font-14 { font-size: 14px; }
+.font-16 { font-size: 16px; }
+.font-18 { font-size: 18px; }
+.font-20 { font-size: 20px; }
+
+/* border radius */
+.br-0 {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+/* Flyer design */
+.flyer-design-wrap {
+	padding: 20px;
+}
+
+/* choose flyer */
+.choose-flyer-grid-wrap {
+	height: 741px;
+	overflow: auto;
+}
+
+/* 3 cols checkboxes and radio buttons */
+.checkbox-3-col .box-checkbox {
+    width: 32%;
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+/* 4 cols checkboxes and radio buttons */
+.checkbox-4-col .box-checkbox {
+    width: 24.5%;
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+.maxImgSize{
+	max-height: 210px;
+}
+
+label.box-radio,
+label.box-checkbox {
+    text-align: center;
+    /* background-color: #eee; */
+    /* border: 1px solid #ddd; */
+    padding: 5px 10px;
+    margin: 3px;
+    text-transform: none;
+}
+.box-radio input[type="radio"],
+.box-checkbox input[type="checkbox"] {
+	display: none;
+}
+.box-radio.checked,
+.box-checkbox.checked {
+    background-color: #6666A4;
+    border: 1px solid #545491;
+    color: #fff;
+}
+
+/* module sidebar */
+.module {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+/* sidebar select boxes */
+.select-box {
+	padding: 0;
+	border: 1px solid #ddd;
+}
+.select-box:hover,
+.select-box:focus {
+	box-shadow: none;
+	border: 1px solid #ddd;
+}
+.select-box > option {
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.select-box > option:last-child {
+	border-bottom: none;
+}
+
+.flyer_small{border: 3px solid #ccc; height: 230px !important; margin-bottom:20px;/* padding: 2px; */}
+.flyer_small_selected{border: 3px solid green; /* padding: 2px; */}
+/* .choose-flyer-grid-wrap  */
+#big_image{width:100%;}
+/*this is for front end flyer categories*/
+.customButton div a{
+	margin: 0px 2px 2px 0px;
+}
+
+.customButtonFrontEnd .col-md-2{
+	width: 16.2%!important;
+}

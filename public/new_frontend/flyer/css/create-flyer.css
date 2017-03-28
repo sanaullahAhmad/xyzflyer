@@ -1,0 +1,345 @@
+/**
+ * css for create flyer page.
+ */
+
+
+/**
+ * utility classes
+ * ========================
+ */
+.clearfix {
+    clear: both;
+    overflow: hidden;
+}
+.right {
+    float: right;
+}
+.centered-column {
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+/**
+ * ui elements
+ */
+
+/* end .squaredTwo */
+/* .checkbox-styled */
+.checkbox-styled {
+    position: relative;
+    margin: 20px 0;
+}
+.checkbox-styled label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.checkbox-styled label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.checkbox-styled label:hover::after {
+    opacity: 0.3;
+}
+.checkbox-styled input[type=checkbox] {
+    visibility: hidden;
+}
+.checkbox-styled input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+
+/**
+ * order page
+ * ==========================
+ */
+.order-number {
+    font-weight: bold;
+}
+.order-number span {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    font-weight: normal;
+}
+.flyer-navigation {
+    margin-top: 40px;
+}
+
+.section-sub-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    color: #333;
+}
+.list-unstyled {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.list-unstyled a {
+    color: #A0CE4E;
+}
+.list-unstyled a:hover {
+    opacity: 0.8;
+}
+.list-unstyled span {
+    font-style: italic;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.flyer-heading {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.page-template-flyer-design .fusion-panel.panel-default {
+    border: none;
+}
+
+/**
+ * filterable flyers
+ */
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    transition-property:         transform, opacity;
+}
+
+.list-inline {
+    list-style: none;
+    padding: 0;
+}
+.list-inline li {
+    display: inline-block;
+    margin: 10px 2px;
+}
+.selected-item img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+.full-flyer-design img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.image-zoom {
+    margin: 0;
+}
+.image-zoom li {
+    margin: 0;
+}
+
+#flyer-zoom {
+    margin: 0;
+}
+.qty {
+    text-align: center;
+}
+.top-nav-wrap {
+    margin-bottom: 40px;
+}
+#flyer-zoom,
+.undo-redo-list,
+.save-list {
+    float: right;
+    margin: 0;
+}
+.undo-redo-list {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.save-list li,
+.save-list li a,
+.undo-redo-list li,
+.undo-redo-list li a {
+    padding: 0;
+    margin: 0;
+}
+.image-zoom li input[type="button"],
+.undo-redo-list li a,
+.save-list li a {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #f0f0f0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.image-zoom li input[type="text"] {
+    width: 50px;
+    border: 1px solid #f0f0f0 !important;
+}
+image-zoom li input[type="button"] {
+    border: 1px solid #f0f0f0 !important;
+}
+
+.edit-flyer-wrap {
+    position: relative;
+}
+.selceted-flyer-design {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+}
+.edit-flyer-menu {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.edit-flyer-menu .input-wrap {
+    margin-bottom: 20px;
+}
+.edit-flyer-menu .input-wrap label {
+    display: block;
+}
+.edit-flyer-menu .input-wrap {}
+
+.colorpicker {
+    display: inline-block !important;
+    padding: 15px 10px 15px 40px !important;
+    border: 1px solid #ddd !important;
+    font-size: 14px !important;
+}
+.minicolors-theme-default .minicolors-swatch {
+    top: 5px !important;
+    left: 5px !important;
+    width: 23px !important;
+    height: 23px !important;
+}
+
+
+.proof-flyer-wrap input[type="text"],
+.proof-flyer-wrap textarea,
+.proof-flyer-wrap select,
+.edit-flyer-menu .input-wrap input[type="text"],
+.edit-flyer-menu .input-wrap textarea,
+.edit-flyer-menu .input-wrap select {
+    border: 1px solid #ddd !important;
+    width: 100% !important;
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 14px !important;
+}
+.proof-flyer-wrap  textarea,
+.edit-flyer-menu .input-wrap textarea {
+    min-height: 200px;
+}
+.edit-flyer-menu .input-wrap .file-upload {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.edit-flyer-menu a.icon-32 {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 32px;
+}
+.styled-radio {
+    position: relative;
+    width: 29%;
+    height: 20px;
+    margin-bottom: 5px;
+}
+input.styled-radio:before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+}
+input.styled-radio:checked:before {
+    border: 1px solid #000;
+}
+input.red:before {
+    background-color: red;
+}
+input.green:before {
+    background-color: green;
+}
+input.blue:before {
+    background-color: blue;
+}
+input.pink:before {
+    background-color: pink;
+}
+input.purple:before {
+    background-color: purple;
+}
+input.orange:before {
+    background-color: orange;
+}
+
+.proof-flyer-wrap .form-decription {
+    text-transform: none;
+    font-weight: normal;
+}

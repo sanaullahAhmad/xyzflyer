@@ -1,0 +1,26 @@
+/* here you can put your own css to customize and override the theme */
+.amcharts-chart-div > a {
+	display: none !important;
+}
+
+#dash-sales-by-region{
+	width:400px;
+	height: 200px;
+}
+
+#dash-regional-stats{
+	width:400px;
+	height: 450px;
+}
+
+.feeds li .col2>.date{
+	width:100px;
+	position: relative;
+	right:30px;
+}
+
+.page-logo{
+	padding-top:  5px!important;
+}
+
+.page-logo h4{font-size: 20px; display: inline-block; padding-right: 10px;  color: white;}

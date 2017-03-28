@@ -1,0 +1,1 @@
+<p class="info" id="info"><span class="info_inner">Sorry.. But there are no records found.</span></p>

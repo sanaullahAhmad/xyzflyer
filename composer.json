@@ -1,0 +1,7 @@
+{
+  "require": {
+    "sendgrid/sendgrid": "~5.0.7",
+    "swiftmailer/swiftmailer": "@stable",
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
